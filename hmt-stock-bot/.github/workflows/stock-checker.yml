@@ -1,0 +1,48 @@
+name: HMT Stock Checker
+
+on:
+  schedule:
+    # Runs every 15 minutes
+    # Note: GitHub Actions minimum is ~10 min; 15 is reliable on free tier
+    - cron: "*/15 * * * *"
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+
+jobs:
+  check-stock:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to commit stock_state.json back
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run stock checker
+        run: python checker.py
+
+      - name: Commit updated state file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stock_state.json
+          # Only commit if there's a change
+          git diff --staged --quiet || git commit -m "chore: update stock state $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Optional: Telegram alert (uncomment if you set up Telegram bot) ──
+      # - name: Send Telegram alert on stock change
+      #   if: env.STOCK_CHANGED == 'true'
+      #   run: |
+      #     curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+      #       -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+      #       -d text="HMT Watch in stock! Check stock_state.json for details."
