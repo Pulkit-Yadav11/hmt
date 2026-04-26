@@ -1,8 +1,4 @@
-"""
-HMT Watch Stock Checker
-Checks hmtwatches.in and hmtwatches.store for stock changes
-and sends desktop notifications (or prints for CI/GitHub Actions).
-"""
+
 
 import json
 import os
@@ -12,9 +8,8 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-# ──────────────────────────────────────────────
+
 #  CONFIGURATION
-# ──────────────────────────────────────────────
 
 # Specific product pages you always want to track
 SPECIFIC_WATCHES = [
@@ -48,9 +43,7 @@ HEADERS = {
     )
 }
 
-# ──────────────────────────────────────────────
 #  NOTIFICATION
-# ──────────────────────────────────────────────
 
 def notify(title: str, message: str):
     """Send a desktop notification. Falls back to print in CI."""
@@ -69,9 +62,7 @@ def notify(title: str, message: str):
         pass  # silently skip in headless/CI environments
 
 
-# ──────────────────────────────────────────────
 #  STATE MANAGEMENT
-# ──────────────────────────────────────────────
 
 def load_state() -> dict:
     if os.path.exists(STATE_FILE):
@@ -85,9 +76,9 @@ def save_state(state: dict):
         json.dump(state, f, indent=2)
 
 
-# ──────────────────────────────────────────────
+
 #  SCRAPING HELPERS
-# ──────────────────────────────────────────────
+
 
 def fetch(url: str) -> BeautifulSoup | None:
     try:
@@ -106,9 +97,7 @@ def is_out_of_stock_text(text: str) -> bool:
     return any(kw in t for kw in oos_keywords)
 
 
-# ──────────────────────────────────────────────
 #  CHECK SPECIFIC PRODUCT PAGE
-# ──────────────────────────────────────────────
 
 def check_specific_product(watch: dict, state: dict) -> dict:
     url = watch["url"]
@@ -156,9 +145,7 @@ def check_specific_product(watch: dict, state: dict) -> dict:
     return state
 
 
-# ──────────────────────────────────────────────
 #  CHECK CATALOG PAGE (hmtwatches.in)
-# ──────────────────────────────────────────────
 
 def check_catalog_hmtwatches_in(state: dict) -> dict:
     url = "https://www.hmtwatches.in/"
@@ -224,10 +211,6 @@ def check_catalog_hmtwatches_in(state: dict) -> dict:
     return state
 
 
-# ──────────────────────────────────────────────
-#  CHECK CATALOG PAGE (hmtwatches.store)
-# ──────────────────────────────────────────────
-
 def check_catalog_hmtwatches_store(state: dict) -> dict:
     url = "https://www.hmtwatches.store/all-products"
     print(f"  Scanning catalog: {url}")
@@ -287,9 +270,6 @@ def check_catalog_hmtwatches_store(state: dict) -> dict:
     return state
 
 
-# ──────────────────────────────────────────────
-#  MAIN
-# ──────────────────────────────────────────────
 
 def main():
     print(f"\n{'='*50}")
