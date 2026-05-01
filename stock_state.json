@@ -2,19 +2,19 @@
   "https://www.hmtwatches.store/product/6297d606-55df-44a0-9d2c-7ed811bf8e27": {
     "name": "HMT Watch (6297d606)",
     "status": "out_of_stock",
-    "last_checked": "2026-05-01T18:45:38.521066",
+    "last_checked": "2026-05-01T20:00:58.474234",
     "url": "https://www.hmtwatches.store/product/6297d606-55df-44a0-9d2c-7ed811bf8e27"
   },
   "https://www.hmtwatches.store/product/2ab8780d-a5f3-4c87-8051-dfc691d1cb11": {
     "name": "HMT Watch (2ab8780d)",
     "status": "out_of_stock",
-    "last_checked": "2026-05-01T18:45:43.429556",
+    "last_checked": "2026-05-01T20:01:01.632570",
     "url": "https://www.hmtwatches.store/product/2ab8780d-a5f3-4c87-8051-dfc691d1cb11"
   },
   "https://www.hmtwatches.store/product/b8dd05e3-7936-4291-bcb4-1cea41b14cdf": {
     "name": "HMT Watch (b8dd05e3)",
     "status": "out_of_stock",
-    "last_checked": "2026-05-01T18:45:46.702905",
+    "last_checked": "2026-05-01T20:01:04.631955",
     "url": "https://www.hmtwatches.store/product/b8dd05e3-7936-4291-bcb4-1cea41b14cdf"
   },
   "hmtwatches.in::Shop For": {
@@ -22,97 +22,97 @@
     "status": "in_stock",
     "url": "./",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.895896"
+    "last_checked": "2026-05-01T20:01:09.169563"
   },
   "hmtwatches.in::Shop By Type": {
     "name": "Shop By Type",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/shop_type?type=shop_type&id=10",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.896346"
+    "last_checked": "2026-05-01T20:01:09.170011"
   },
   "hmtwatches.in::Shop By Collections": {
     "name": "Shop By Collections",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/collections?type=collection&id=9",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.896412"
+    "last_checked": "2026-05-01T20:01:09.170076"
   },
   "hmtwatches.in::Popular Watches": {
     "name": "Popular Watches",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.896482"
+    "last_checked": "2026-05-01T20:01:09.170145"
   },
   "hmtwatches.in::Recent Search": {
     "name": "Recent Search",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.896680"
+    "last_checked": "2026-05-01T20:01:09.170362"
   },
   "hmtwatches.in::Suggestion": {
     "name": "Suggestion",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.897007"
+    "last_checked": "2026-05-01T20:01:09.170670"
   },
   "hmtwatches.in::Trending Products": {
     "name": "Trending Products",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.897062"
+    "last_checked": "2026-05-01T20:01:09.170724"
   },
   "hmtwatches.in::HMT EXPLORE Watches": {
     "name": "HMT EXPLORE Watches",
     "status": "in_stock",
     "url": "javascript:void(0);",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.928146"
+    "last_checked": "2026-05-01T20:01:09.202159"
   },
   "hmtwatches.in::HMT Collections": {
     "name": "HMT Collections",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/collections?type=collection&id=64",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.928384"
+    "last_checked": "2026-05-01T20:01:09.202405"
   },
   "hmtwatches.in::Janata Automatic": {
     "name": "Janata Automatic",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.930400"
+    "last_checked": "2026-05-01T20:01:09.204492"
   },
   "hmtwatches.in::Our Products": {
     "name": "Our Products",
     "status": "in_stock",
     "url": "https://www.hmtwatches.in/watches",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.930617"
+    "last_checked": "2026-05-01T20:01:09.204702"
   },
   "hmtwatches.in::HMT Limited": {
     "name": "HMT Limited",
     "status": "in_stock",
     "url": "https://www.facebook.com/hmtlimitedwatches?mibextid=ZbWKwL",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.930761"
+    "last_checked": "2026-05-01T20:01:09.204840"
   },
   "hmtwatches.in::Products Compare": {
     "name": "Products Compare",
     "status": "in_stock",
     "url": "#",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.930892"
+    "last_checked": "2026-05-01T20:01:09.204944"
   },
   "hmtwatches.in::Products Quick View": {
     "name": "Products Quick View",
     "status": "in_stock",
     "url": "#",
     "source": "hmtwatches.in",
-    "last_checked": "2026-05-01T18:45:50.931083"
+    "last_checked": "2026-05-01T20:01:09.205125"
   }
 }
